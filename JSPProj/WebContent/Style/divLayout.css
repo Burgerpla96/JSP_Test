@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+div.allWrap {
+    width: 80%;
+    margin: 0 auto;
+    /* 가운데 배치 효과 */
+    /* background-color: yellow; */
+    text-align: center;
+    /* margin: 0 auto;이 적용 되지 않는 브라우저에는 
+    text-align: center; 적용 후 그 안의 div에서 text를
+    text-align: left;사용해 다시 정렬한다. */
+}
+div.partWrap{
+    width: 100%;
+    text-align: left;
+}
+.header div.logo{
+    width: 15%;
+    float: left;
+}
+.header div.logo>img{
+    width: 100%;
+    height: 60px;
+}
+.header .topMenu{
+    /* background-color: green; */
+    height: 60px;
+    float: right;
+    text-align: right;
+    line-height: 60px;
+}
+.header div.topMenu li{
+    display: inline;
+    border-right: 1px gray solid;
+    padding-right: 5px;
+}
+.header div.topMenu li:last-child{
+    border: none;
+}
+div.section{
+    clear:both;
+}
+div.section div.leftMenu{
+    /* background-color: aqua; */
+    width: 15%;
+    float: left;
+}
+div.section div.body{
+    /* background-color: coral; */
+    width: 85%;
+    float: right;
+}
+div.section div.leftMenu ul{
+    list-style: none;
+    margin: 10px 0 0 10px;
+}
+div.section div.leftMenu ul li{
+    margin-bottom: 10px;
+} 
+div.section div.body>.content{
+    padding: 10px 0 0 10px;
+}
+.footer{
+    /* background-color: pink; */
+    clear: both;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.footer address{
+    font-style: normal;
+    font-weight: bold;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	text-decoration: underline;
+	color:red;
+}
