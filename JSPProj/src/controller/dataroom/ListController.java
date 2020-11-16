@@ -22,7 +22,6 @@ public class ListController extends HttpServlet {
 		//가) 사용자 요청받기
 		//나) 요청을 분석한다.
 		//다) 모델에서 필요한 로직을 호출해서 결과값이 있으면 받기
-		
 		DataRoomDAO dao = new DataRoomDAO(req.getServletContext());
 		Map map = new HashMap();
 		///////////////////////////////////////페이징

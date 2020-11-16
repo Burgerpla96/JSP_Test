@@ -146,11 +146,11 @@
 								<table style="width: 75%;">
 									<tr>
 										<td style="width: 15%">이전글</td>
-										<td><%= map.get("PREV")==null?"이전글이 없습니다.":String.format("<a href='View.jsp?no=%s'>%s</a>",map.get("PREV").getNo(),map.get("PREV").getTitle()) %></td>
+										<td><%= map.get("PREV")==null?"이전글이 없습니다.":String.format("<a href='View.jsp?no=%s&nowPage=%s'>%s</a>",map.get("PREV").getNo(),nowPage,map.get("PREV").getTitle()) %></td>
 									</tr>
 									<tr>
 										<td style="width: 15%">다음글</td>
-										<td><%= map.get("NEXT")==null?"다음글이 없습니다.":String.format("<a href='View.jsp?no=%s'>%s</a>",map.get("NEXT").getNo(),map.get("NEXT").getTitle()) %></td>
+										<td><%= map.get("NEXT")==null?"다음글이 없습니다.":String.format("<a href='View.jsp?no=%s&nowPage=%s'>%s</a>",map.get("NEXT").getNo(),nowPage,map.get("NEXT").getTitle()) %></td>
 									</tr>
 								</table>
 								

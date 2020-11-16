@@ -9,7 +9,6 @@
 	<servlet>
 		<servlet-name>SERVELT_HELLO</servlet-name>
 		<servlet-class>controller.HelloServlet</servlet-class>
-		
 	</servlet>
 	<!-- 요청 URL 맵핑 -->
 	<servlet-mapping>
@@ -200,7 +199,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DataRoomIndex</servlet-name>
-		<!-- 반드기 /로 시작하는 패턴: 디렉토리 구조와 무관함 -->
+		<!-- 반드시 /로 시작하는 패턴: 디렉토리 구조와 무관함 -->
 		<url-pattern>/DataRoom/Index.kosmo</url-pattern>
 	</servlet-mapping>
 	
@@ -283,16 +282,19 @@
 	설정을 통한 에러처리
 	방법1. 에러코드로
 	-->
+	<!--  
 	<error-page>
 		<error-code>500</error-code>
 		<location>/Error15/ErrorCode.jsp</location>
 	</error-page>
+	-->
 	<!-- 방법2. 예외 클래스로 -->
+	<!-- 
 	<error-page>
 		<exception-type>java.lang.NullPointerException</exception-type>
 		<location>/Error15/ErrorType.jsp</location>
 	</error-page>
-	
+		-->
 	
 	
 	

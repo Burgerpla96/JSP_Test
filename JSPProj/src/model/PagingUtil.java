@@ -13,7 +13,7 @@ public class PagingUtil {
 		//처음 및 이전을 위한 로직
 		if(intTemp != 1){
                 
-			pagingStr+="<a href='"+page+"nowPage=1'>◀◀</a>&nbsp;<a href='"+page+"nowPage="+(intTemp -blockPage)+"'>◀</a>";
+			pagingStr+="<a href='"+page+"nowPage=1'>◀◀</a>&nbsp;<a href='"+page+"nowPage="+(intTemp - blockPage)+"'>◀</a>";
 		}
 		
 		//페이지 표시 제어를 위한 변수
